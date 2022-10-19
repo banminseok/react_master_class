@@ -6,6 +6,7 @@ const Wrapper = styled.div`
   width: 100vw;
   justify-content: center;
   align-items: center;
+  background-color: ${(props) => props.theme.backgroundColor};
 `;
 const rotationAnimation = keyframes`
   0% {
@@ -23,6 +24,9 @@ const rotationAnimation = keyframes`
 const Emoji = styled.span`
   font-size: 36px;
 `;
+const Title = styled.h1`
+  color: ${(props) => props.theme.textColor};
+`;
 const Box = styled.div`
   height: 200px;
   width: 200px;
@@ -39,6 +43,7 @@ const Box = styled.div`
 function App() {
   return (
     <Wrapper>
+      <Title>Hello</Title>
       <Box>
         <Emoji>🤩</Emoji>
       </Box>
